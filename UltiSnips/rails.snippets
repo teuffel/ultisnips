@@ -903,4 +903,35 @@ it 'routes to #${1:action}' do
 end
 endsnippet
 
+snippet desc "describe 'something' do .. end" 
+describe "$1" do
+	$2
+end
+endsnippet
+
+snippet con "context 'something' do .. end" 
+context "$1" do
+	$2
+end
+endsnippet
+
+snippet ito "it 'somethino' do .. end"
+it "$1" do
+	$2
+end
+endsnippet
+
+snippet it "it { should }" 
+it { should $1 }
+endsnippet
+
+snippet its "its(:method) { should }"
+its(:$1) { should $2 }
+endsnippet
+
+snippet bef "before do .. end" 
+before do
+	$1
+end
+endsnippet
 # vim:ft=snippets:

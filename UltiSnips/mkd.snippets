@@ -1,0 +1,26 @@
+snippet todo_list "Add a todo list entry for today"
+`date +%A`, `date +%d`.`date +%m`.`date +%Y` - Todo List                  
+------------------------------------------------------------
+
+$1
+
+___
+endsnippet
+
+snippet due "Add due date"
+( Due-Date: ${1:`date +%d`}.${2:`date +%m`}.${3:`date +%Y`} )
+endsnippet
+
+snippet task "Adds a task"
+* TASK: $1 - ( *Due-Date: ${2:`date +%d`}.${3:`date +%m`}.${4:`date +%Y`}* ) - Created: `date +%d`.`date +%m`.`date +%Y`
+
+endsnippet
+
+snippet info "Adds a Info"
+* INFO: $1 
+
+endsnippet
+
+snippet ticket "Adds a redmine link"
+https://${1:kt.7p-group.com}/issues/$2
+endsnippet
